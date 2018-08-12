@@ -24,10 +24,9 @@ FilmDetailView.prototype.render = function (film) {
   const releaseDate = this.customCreateElement('p', `Released: ${film.release_date}` );
   this.container.appendChild(releaseDate);
 
-  // const languagesList = this.createLanguagesList(country.languages);
-  // this.container.appendChild(languagesList);
+  const description = this.customCreateElement('p', `${film.description}` );
+  this.container.appendChild(description);
 };
-
 
 FilmDetailView.prototype.customCreateElement = function (elementType, text) {
   const element = document.createElement(elementType);
