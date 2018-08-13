@@ -35,15 +35,4 @@ FilmDetailView.prototype.customCreateElement = function (elementType, text) {
   return element;
 };
 
-// CountryInfoView.prototype.createLanguagesList = function (languages) {
-//   const list = document.createElement('ul');
-//
-//   languages.forEach((language) => {
-//     const listItem = document.createElement('li');
-//     listItem.textContent = language.name;
-//     list.appendChild(listItem);
-//   });
-//   return list;
-// };
-
 module.exports = FilmDetailView;
